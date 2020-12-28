@@ -261,9 +261,13 @@ textarea {
   }
 }
 
+div {
+    clear: both;
+    margin: 50px auto;
+}
+
 #button1 {
     perspective: 1000px;
-    margin: 50px auto;
     display: table;
 }
 
@@ -292,4 +296,23 @@ textarea {
     position: relative;
     top: 2px;
     box-shadow: 3px 6px 5px 0px rgba(235,222,202,1);
+}
+
+#menu a, #menu a:visited, #menu a:link {
+    text-decoration: none;
+    color: black;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#menu > li {
+    float: left;
+}
+
+#menu > li > a {
+    border: 1px solid black;
+    padding: 20px 40px;
+    background: linear-gradient(to bottom, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
 }
