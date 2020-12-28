@@ -263,10 +263,11 @@ textarea {
 
 div {
     clear: both;
-    margin: 50px auto;
 }
 
 #button1 {
+    margin: 50px auto;
+    padding: 50px;
     perspective: 1000px;
     display: table;
 }
@@ -301,6 +302,9 @@ div {
 #menu a, #menu a:visited, #menu a:link {
     text-decoration: none;
     color: black;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
 }
 
 #menu li {
@@ -312,7 +316,22 @@ div {
 }
 
 #menu > li > a {
-    border: 1px solid black;
+    border-left: 1px solid black;
     padding: 20px 40px;
+    background: linear-gradient(to bottom, rgba(164,179,87,0.75) 0%, rgba(117,137,12,0.75) 100%);
+}
+
+#menu > li > a:hover {
     background: linear-gradient(to bottom, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+    cursor: pointer;
+}
+
+#menu > li:first-child > a {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#menu > li:last-child > a {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
