@@ -261,7 +261,11 @@ textarea {
   }
 }
 
-#button {
+#button1 {
     margin: 50px auto;
     display: table;
+}
+
+#button1 a {
+
 }
