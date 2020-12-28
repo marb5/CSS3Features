@@ -260,3 +260,8 @@ textarea {
     page-break-after: avoid;
   }
 }
+
+#button {
+    margin: 50px auto;
+    display: table;
+}
